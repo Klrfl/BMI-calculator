@@ -33,7 +33,7 @@ def BMICalc():
     print("kamu masuk obesitas kelas 2.")
 
   # recursion untuk mengulang perhitungan
-  ulang = int(input("mau ngitung lagi ga? 1 = ya, 0 = tidak "))
+  ulang = int(input("mau ngitung lagi ga? [1 = ya, 0 = tidak]: "))
   if ulang:
     print("mengulang kalkulasi.. \n")
     BMICalc()
