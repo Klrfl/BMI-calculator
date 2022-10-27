@@ -11,6 +11,7 @@ def BMICalc():
 
   print(f"\n{nama}, BMI kamu adalah {bmi}.")
 
+  # kondisi, kekurangan berat badan dan normal
   if bmi < 16:
     print("kamu kekurangan berat badan. Banget.")
   elif 16 < bmi < 16.9:
@@ -20,6 +21,8 @@ def BMICalc():
 
   elif 18.5 < bmi < 24.9:
     print("BMI kamu normal. Pertahankan ya.")
+
+  # kondisi, kelebihan berat badan dan obesitas
   elif 25 < bmi < 29.9:
     print("kamu sedikit kelebihan berat badan.")
   elif 30 < bmi < 34.9:
@@ -29,6 +32,7 @@ def BMICalc():
   elif bmi > 40:
     print("kamu masuk obesitas kelas 2.")
 
+  # recursion untuk mengulang perhitungan
   ulang = int(input("mau ngitung lagi ga? 1 = ya, 0 = tidak "))
   if ulang:
     print("mengulang kalkulasi.. \n")
